@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- not autowire-->
+<!--    <bean id="cat1" name="cat11,cat12,cat13" class="com.example.springlearning.di.autowire2.Cat">-->
+<!--        <constructor-arg name="name" value="CAT1"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="people1" name="people11,people12" class="com.example.springlearning.di.autowire2.People">-->
+<!--        <property name="name" value="Edwin Xu"/>-->
+<!--        <property name="catList">-->
+<!--            <list>-->
+<!--                <ref bean="cat11"/>-->
+<!--                <ref bean="cat12"/>-->
+<!--                <ref bean="cat13"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+
+    <!-- bytype -->
+
+    <bean id="cat22" name="cat33" class="com.example.springlearning.di.autowire2.Cat">
+        <constructor-arg name="name" value="CCCAAATTT"/>
+    </bean>
+    <!--name=cat 和类Cat一致   -->
+    <bean id="autowirebyname" class="com.example.springlearning.di.autowire2.AutowireByName"
+          autowire="byType">
+        <property name="name" value="Edwin Xu"/>
+    </bean>
+
+
+
+
+</beans>
