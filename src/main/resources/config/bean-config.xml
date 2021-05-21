@@ -5,13 +5,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
     <beans>
-        <bean class="com.example.springlearning.xmlconfig.HelloWorldImpl"/>
+        <bean class="com.example.springlearning.bean.xmlconfig.HelloWorldImpl"/>
 
-        <bean id="helloworldId" class="com.example.springlearning.xmlconfig.HelloWorldImpl"/>
+        <bean id="helloworldId" class="com.example.springlearning.bean.xmlconfig.HelloWorldImpl"/>
 
-        <bean name="helloworldName" class="com.example.springlearning.xmlconfig.HelloWorldImpl"/>
+        <bean name="helloworldName" class="com.example.springlearning.bean.xmlconfig.HelloWorldImpl"/>
 
-        <bean name="helloworldName1 alias1 alias2" class="com.example.springlearning.xmlconfig.HelloWorldImpl"/>
+        <bean name="helloworldName1 alias1 alias2" class="com.example.springlearning.bean.xmlconfig.HelloWorldImpl"/>
 
         <alias name="helloworldName" alias="helloworldNameAlias"/>
 

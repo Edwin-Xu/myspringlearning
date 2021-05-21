@@ -1,4 +1,4 @@
-package com.example.springlearning.xmlconfig;
+package com.example.springlearning.bean.xmlconfig;
 
 import java.util.*;
 

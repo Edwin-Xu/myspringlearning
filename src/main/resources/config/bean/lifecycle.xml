@@ -6,7 +6,7 @@
     <!-- autowire="byName"-->
     <bean id="employee"
           name="edwinxu"
-          class="com.example.springlearning.bean.lifecycle.Employee"
+          class="com.example.springlearning.bean.lifecycle.demo01.Employee"
           init-method="initMethod"
           lazy-init="true"
           scope="prototype"
@@ -21,12 +21,12 @@
         <property name="id" value="2"/>
     </bean>
 
-    <bean id="myPostProcessor2" class="com.example.springlearning.bean.lifecycle.MyBeanPostProcessor2"/>
-    <bean id="myPostProcessor" class="com.example.springlearning.bean.lifecycle.MyBeanPostProcessor"/>
+    <bean id="myPostProcessor2" class="com.example.springlearning.bean.lifecycle.demo01.MyBeanPostProcessor2"/>
+    <bean id="myPostProcessor" class="com.example.springlearning.bean.lifecycle.demo01.MyBeanPostProcessor"/>
 
 
 
     <!-- BeanFactoryPostProcessor   don't work ,why ? -->
-    <bean id="beanFactoryPostProcessor" class="com.example.springlearning.bean.lifecycle.MyFactoryPostProcessor"/>
+    <bean id="beanFactoryPostProcessor" class="com.example.springlearning.bean.lifecycle.demo01.MyFactoryPostProcessor"/>
 
 </beans>

@@ -1,4 +1,4 @@
-package com.example.springlearning.bean.lifecycle;
+package com.example.springlearning.bean.lifecycle.demo01;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

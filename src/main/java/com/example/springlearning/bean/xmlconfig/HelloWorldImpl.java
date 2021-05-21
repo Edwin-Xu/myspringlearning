@@ -1,6 +1,4 @@
-package com.example.springlearning.xmlconfig;
-
-import java.util.*;
+package com.example.springlearning.bean.xmlconfig;
 
 /**
  * @author Edwin Xu

@@ -1,4 +1,4 @@
-package com.example.springlearning.bean.lifecycle;
+package com.example.springlearning.bean.lifecycle.demo01;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;

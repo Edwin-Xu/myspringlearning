@@ -1,4 +1,4 @@
-package com.example.springlearning.bean.lifecycle;
+package com.example.springlearning.bean.lifecycle.demo01;
 
 /**
  * Created by Edwin Xu on 11/28/2020 8:18 PM

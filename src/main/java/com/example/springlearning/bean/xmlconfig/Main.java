@@ -1,9 +1,7 @@
-package com.example.springlearning.xmlconfig;
+package com.example.springlearning.bean.xmlconfig;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.*;
 
 /**
  * @author Edwin Xu
