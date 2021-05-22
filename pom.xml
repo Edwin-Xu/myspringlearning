@@ -78,6 +78,14 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+
+        <!--CGLIB： Code Generation Library-->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.2.12</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>

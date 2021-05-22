@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--Bean-->
+    <bean id="cat" class="com.example.springlearning.aop.demo4.Cat">
+        <property name="name" value="Tome"/>
+    </bean>
+
+
+
+
+    <!--通知Bean-->
+    <bean id="eatAdvice" class="com.example.springlearning.aop.demo4.EatAdvice"/>
+    <aop:config>
+        <!-- aop:aspect:切面 -->
+        <aop:aspect id="aspect" ref="eatAdvice">
+            <!-- 切点 -->
+            <aop:pointcut id="eat-pointcut"
+                          expression="execution(* com.example.springlearning.aop.demo4.Cat.eat(..))"/>
+            <!--通知-->
+            <aop:before pointcut-ref="eat-pointcut" method="before"/>
+            <aop:after pointcut-ref="eat-pointcut" method="after"/>
+        </aop:aspect>
+    </aop:config>
+
+
+    <bean id="sleepAdvice" class="com.example.springlearning.aop.demo4.SleepAdvice"/>
+    <!--aop配置-->
+    <aop:config>
+        <!--定义一个切面-->
+        <aop:aspect id="aspect" ref="sleepAdvice">
+            <!--定义一个切点-->
+            <aop:pointcut id="sleep-pointcut"
+                          expression="execution(* com.example.springlearning.aop.demo4.Cat.sleep(..))"/>
+            <!--定义切点之后需要定义通知，即在切点上发生的事件-->
+            <aop:before method="before" pointcut-ref="sleep-pointcut"/>
+            <aop:after method="after" pointcut-ref="sleep-pointcut"/>
+        </aop:aspect>
+    </aop:config>
+
+
+</beans>
