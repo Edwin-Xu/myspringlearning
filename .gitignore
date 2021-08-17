@@ -29,3 +29,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+### Edwinxu ###
+## 去掉CGLIB生成的字节码
+com/
