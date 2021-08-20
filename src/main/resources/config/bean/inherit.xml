@@ -4,13 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 父类Bean，setter注入 -->
-    <bean id="father" class="com.example.springlearning.bean.inherit.Father">
+    <bean id="father" class="cn.edw.spring.bean.inherit.Father">
         <property name="msg1" value="this is msg1"/>
         <property name="msg2" value="this is msg2"/>
     </bean>
 
     <!--子类Bean， 使用parent="father"指定父类 -->
     <!--对于子类的属性，可以从父类Bean得到定义，而不需要手动注入-->
-    <bean id="child" class="com.example.springlearning.bean.inherit.Child" parent="father"/>
+    <bean id="child" class="cn.edw.spring.bean.inherit.Child" parent="father"/>
 
 </beans>

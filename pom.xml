@@ -5,8 +5,8 @@
     <groupId>com.example.springlearning</groupId>
     <artifactId>demo</artifactId>
     <version>v1</version>
-    <name>springlearning</name>
-    <description>EdwinXu's Spring Learning Project!</description>
+    <name>spring learning</name>
+    <description>Edwin Xu's Spring Learning Project!</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -48,6 +48,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.2.0</version>
         </dependency>
 
 
@@ -117,7 +123,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.0.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.springlearning.SpringlearningApplication</mainClass>
+                    <mainClass>cn.edw.spring.SpringlearningApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

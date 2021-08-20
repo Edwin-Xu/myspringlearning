@@ -6,9 +6,9 @@
 
     <aop:aspectj-autoproxy/>
 
-    <bean id="manageServiceImpl" class="com.example.springlearning.aop.demo3.ManageServiceImpl"/>
+    <bean id="manageServiceImpl" class="cn.edw.spring.aop.demo3.ManageServiceImpl"/>
 
-    <!--<bean id="employeeManageAspect" class="com.example.springlearning.aop.demo3.EmployeeManageAspect"/>-->
-    <bean id="employeeManageAspect" class="com.example.springlearning.aop.demo3.EmployeeManageAspect2"/>
+    <!--<bean id="employeeManageAspect" class="EmployeeManageAspect"/>-->
+    <bean id="employeeManageAspect" class="cn.edw.spring.aop.demo3.EmployeeManageAspect2"/>
 
 </beans>

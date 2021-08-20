@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="dog1" class="com.example.springlearning.ioc.Dog">
+    <bean name="dog1" class="cn.edw.spring.ioc.Dog">
         <constructor-arg name="name" value="Edwinu' Dog"> </constructor-arg>
     </bean>
 </beans>

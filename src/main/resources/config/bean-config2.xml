@@ -4,11 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- not autowire-->
-<!--    <bean id="cat1" name="cat11,cat12,cat13" class="com.example.springlearning.di.autowire2.Cat">-->
+<!--    <bean id="cat1" name="cat11,cat12,cat13" class="Cat">-->
 <!--        <constructor-arg name="name" value="CAT1"/>-->
 <!--    </bean>-->
 
-<!--    <bean id="people1" name="people11,people12" class="com.example.springlearning.di.autowire2.People">-->
+<!--    <bean id="people1" name="people11,people12" class="People">-->
 <!--        <property name="name" value="Edwin Xu"/>-->
 <!--        <property name="catList">-->
 <!--            <list>-->
@@ -22,11 +22,11 @@
 
     <!-- bytype -->
 
-    <bean id="cat22" name="cat33" class="com.example.springlearning.di.autowire2.Cat">
+    <bean id="cat22" name="cat33" class="cn.edw.spring.di.autowire2.Cat">
         <constructor-arg name="name" value="CCCAAATTT"/>
     </bean>
     <!--name=cat 和类Cat一致   -->
-    <bean id="autowirebyname" class="com.example.springlearning.di.autowire2.AutowireByName"
+    <bean id="autowirebyname" class="cn.edw.spring.di.autowire2.AutowireByName"
           autowire="byType">
         <property name="name" value="Edwin Xu"/>
     </bean>

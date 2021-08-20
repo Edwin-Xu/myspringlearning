@@ -3,11 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="a" class="com.example.springlearning.bean.circulardependency.constructor.A">
+    <bean id="a" class="cn.edw.spring.bean.circulardependency.constructor.A">
         <constructor-arg ref="b"/>
     </bean>
 
-    <bean id="b" class="com.example.springlearning.bean.circulardependency.constructor.B">
+    <bean id="b" class="cn.edw.spring.bean.circulardependency.constructor.B">
         <constructor-arg ref="a"/>
     </bean>
 

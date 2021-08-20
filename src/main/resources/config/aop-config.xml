@@ -5,23 +5,23 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
-<!--    <bean id="student" class="com.example.springlearning.aop.demo1.Student">-->
+<!--    <bean id="student" class="Student">-->
 <!--        <property name="name" value="Edwin Xu"/>-->
 <!--        <property name="id" value="1"/>-->
 <!--    </bean>-->
 
     <!--核心业务Bean-->
-    <bean id="studentService" class="com.example.springlearning.aop.demo1.StudentServiceImpl"/>
+    <bean id="studentService" class="cn.edw.spring.aop.demo1.StudentServiceImpl"/>
 
     <!--通知Bean-->
-    <bean id="beforeAdvice" class="com.example.springlearning.aop.demo1.BeforeAdvice"/>
+    <bean id="beforeAdvice" class="cn.edw.spring.aop.demo1.BeforeAdvice"/>
 
     <aop:config>
         <!-- aop:aspect:切面 -->
         <aop:aspect id="aspect" ref="beforeAdvice">
             <!-- 切点 -->
             <aop:pointcut id="pc"
-                          expression="execution(* com.example.springlearning.aop.demo1.StudentServiceImpl.addStudent(..))"/>
+                          expression="execution(* cn.edw.spring.aop.demo1.StudentServiceImpl.addStudent(..))"/>
             <!--通知-->
             <aop:before pointcut-ref="pc" method="before"/>
             <aop:after pointcut-ref="pc" method="after"/>

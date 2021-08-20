@@ -4,17 +4,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean name="myBeanPostProcessor"
-          class="com.example.springlearning.bean.postprocessor.MyBeanPostProcessor">
+          class="cn.edw.spring.bean.postprocessor.MyBeanPostProcessor">
     </bean>
 
     <bean name="stu003-1"
-          class="com.example.springlearning.domain.Student"
+          class="cn.edw.spring.domain.Student"
           init-method="init">
         <property name="id" value="1"/>
         <property name="name" value="edw"/>
         <property name="age" value="100"/>
     </bean>
-    <bean name="stu003-2" class="com.example.springlearning.domain.Student">
+    <bean name="stu003-2" class="cn.edw.spring.domain.Student">
         <property name="id" value="2"/>
         <property name="name" value="edwin"/>
         <property name="age" value="100"/>

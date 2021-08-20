@@ -1,0 +1,42 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+
+# 应用名称
+spring:
+  application:
+    name: springlearning
+  resources:
+    static_locations: classpath:/static/
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    username: root
+    url: jdbc:mysql://42.192.203.208:3306/common_db?characterEncoding=utf-8&serverTimezone=UTC
+
+
+
+  main:
+    allow-bean-definition-overriding: true
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+management:
+  server:
+    port: 8081
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: beans

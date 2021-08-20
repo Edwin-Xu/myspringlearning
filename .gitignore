@@ -33,4 +33,7 @@ build/
 
 ### Edwinxu ###
 ## 去掉CGLIB生成的字节码
+cglib/
+
+.mvn/
 com/
