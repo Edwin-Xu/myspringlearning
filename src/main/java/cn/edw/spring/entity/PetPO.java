@@ -9,15 +9,14 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author taoxu.xu
- * @date 8/17/2021 8:26 PM
+ * @date 11/5/2021 5:17 PM
  */
-@TableName("user")
-@Data
+@TableName("pet")
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserPO {
+@Data
+public class PetPO {
     @TableId(type = IdType.AUTO)
     private Integer id;
     private String name;
-    private Integer age;
 }
