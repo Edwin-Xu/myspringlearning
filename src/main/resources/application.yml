@@ -1,6 +1,6 @@
 # 应用服务 WEB 访问端口
 server:
-  port: 8080
+  port: 8081
 
 # 应用名称
 spring:
@@ -15,9 +15,6 @@ spring:
     url: jdbc:mysql://localhost:3306/common_db?characterEncoding=utf-8&serverTimezone=UTC
 
 
-
-  main:
-    allow-bean-definition-overriding: true
 
 #management:
 #  endpoints:
